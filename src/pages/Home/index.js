@@ -66,9 +66,9 @@ function Home() {
         {showSkill && <Skill />}
         {showContact && <Contact />}
         <div className="darkMode">
-          <span class="switch">
+          <span className="switch">
             <input type="checkbox" id="switcher" onClick={handleDarkMode} />
-            <label for="switcher"></label>
+            <label htmlFor="switcher"></label>
           </span>
         </div>
         <Introduce dark={dark} />

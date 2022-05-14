@@ -26,11 +26,9 @@ function Introduce(props) {
             <h3 className="name">About Me</h3>
 
             <p>I am a final year student transferring information security and I have a passion for programming.</p>
-            <p>
-              Looking for a professional and dynamic working environment to promote my skills.
-              <p>Try to study and work to become a frontend or backend developer.</p>
-              <p>In the future, have the orientation to become a Full-stack developer</p>
-            </p>
+            <p>Looking for a professional and dynamic working environment to promote my skills.</p>
+            <p>Try to study and work to become a frontend or backend developer.</p>
+            <p>In the future, have the orientation to become a Full-stack developer</p>
           </div>
         </Tilt>
         <Tilt
