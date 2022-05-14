@@ -20,6 +20,7 @@ function Home() {
   const [showAbout, setShowAbout] = useState(true);
   const [showSkill, setShowSkill] = useState(false);
   const [showContact, setShowContact] = useState(false);
+  const [dark, setDark] = useState('#000');
   const handleAbout = () => {
     setShowAbout(true);
     setShowContact(false);
@@ -35,6 +36,10 @@ function Home() {
     setShowContact(true);
     setShowSkill(false);
   };
+  const handleDarkMode = () => {
+    dark === '#000' ? setDark('#fff') : setDark('#000');
+  };
+
   return (
     <>
       <div className="card-home">
@@ -46,7 +51,7 @@ function Home() {
           ))}
         </Swiper>
 
-        <div className="card-buttons">
+        <div className={dark === '#000' ? 'card-buttons' : 'card-buttons-dark'}>
           <button className={showAbout ? 'is-active' : ''} onClick={handleAbout}>
             ABOUT
           </button>
@@ -60,11 +65,18 @@ function Home() {
         {showAbout && <About />}
         {showSkill && <Skill />}
         {showContact && <Contact />}
-        <Introduce />
+        <div className="darkMode">
+          <span class="switch">
+            <input type="checkbox" id="switcher" onClick={handleDarkMode} />
+            <label for="switcher"></label>
+          </span>
+        </div>
+        <Introduce dark={dark} />
       </div>
+
       <div className="main">
-        <ParticleBackground />
-        <h1 data-text="Project..." className="name-project">
+        <ParticleBackground dark={dark} />
+        <h1 data-text="Project..." className={dark === '#000' ? 'name-project' : 'name-project-dark'}>
           Project...
         </h1>
       </div>
@@ -75,7 +87,7 @@ function Home() {
         <Navigation />
       </div>
       <div className="footer">
-        <Footer />
+        <Footer dark={dark} />
       </div>
     </>
   );

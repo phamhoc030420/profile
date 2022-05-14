@@ -1,5 +1,6 @@
 import './footer.scss';
-function Footer() {
+function Footer(props) {
+  const dark = props.dark;
   const handleFacebook = () => {
     window.location = 'https://www.facebook.com/phamhoc.cty';
   };
@@ -8,7 +9,7 @@ function Footer() {
   };
   return (
     <>
-      <div className="main-footer">
+      <div className={dark === '#000' ? 'main-footer' : 'main-footer-light'}>
         <div className="footer">
           <h3>Pham Viet Hoc</h3>
           {/* icon */}

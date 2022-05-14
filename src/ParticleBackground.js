@@ -1,7 +1,8 @@
 import React from 'react';
 import Particles from 'react-tsparticles';
 import { loadFull } from 'tsparticles';
-function ParticleBackground() {
+function ParticleBackground(props) {
+  const dark = props.dark;
   const particlesInit = async (main) => {
     console.log(main);
     await loadFull(main);
@@ -19,7 +20,7 @@ function ParticleBackground() {
         autoPlay: true,
         background: {
           color: {
-            value: '#000',
+            value: `${dark}`,
           },
           image: '',
           position: '',

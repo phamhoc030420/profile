@@ -9,7 +9,8 @@ import logonodejs from '../../assets/image/node.png';
 import logosql from '../../assets/image/sql.png';
 import logomongdb from '../../assets/image/mong.jpg';
 import Tilt from 'react-vanilla-tilt';
-function Introduce() {
+function Introduce(props) {
+  const dark = props.dark;
   return (
     <>
       <div className="introduce">
@@ -21,7 +22,7 @@ function Introduce() {
             opacitt: '0.1',
           }}
         >
-          <div className="about">
+          <div className={dark === '#000' ? 'about' : 'aboutLight'}>
             <h3 className="name">About Me</h3>
 
             <p>I am a final year student transferring information security and I have a passion for programming.</p>
@@ -40,7 +41,7 @@ function Introduce() {
             opacitt: '0.1',
           }}
         >
-          <div className="about skill ">
+          <div className={dark === '#000' ? 'about' : 'aboutLight'}>
             <div className="content">
               <h3>Front End</h3>
               <div className="ho">
