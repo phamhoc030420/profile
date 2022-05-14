@@ -1,0 +1,63 @@
+.navigation {
+  height: 80vh;
+  place-items: center;
+  text-decoration: none;
+  font-family: cursive;
+  margin-top: 200px;
+
+  .nav {
+    position: relative;
+    list-style-type: none;
+    display: flex;
+    background-color: #220455;
+    height: 58px;
+    border-radius: 15px;
+    width: 420px;
+    filter: url('#goo');
+    .nav-indicator {
+      width: 90px;
+      height: 90px;
+      border-radius: 50%;
+      background-color: #220455;
+      position: absolute;
+      top: -35px;
+      left: calc(360px - 165px);
+      transition: left;
+    }
+  }
+
+  li button {
+    text-decoration: none;
+    color: #fff;
+    width: 80px;
+    height: 100%;
+    display: inline-grid;
+    place-items: center;
+    font-size: 25px;
+    z-index: 1;
+    position: relative;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+  }
+  li button.nav-item-active {
+    color: #644c89;
+    transform: translateY(-20%);
+    font-size: 36px;
+    transition: transform 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  }
+  li button.nav-item-active .title {
+    display: block;
+  }
+
+  li button .title {
+    display: none;
+    font-size: 12px;
+  }
+  li button:hover {
+    color: grey;
+  }
+}
+#filter-svg {
+  display: none;
+}

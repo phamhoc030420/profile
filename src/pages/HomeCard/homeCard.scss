@@ -1,0 +1,279 @@
+@import url('https://fonts.googleapis.com/css?family=DM+Sans:400,500|Jost:400,500,600&display=swap');
+.card-home {
+  margin: 0px !important;
+  font-family: 'Jost', sans-serif;
+  .img {
+    width: 100%;
+    height: 600px;
+  }
+}
+.card {
+  height: 400px;
+  width: 340px;
+  margin: auto;
+  overflow-y: auto;
+  position: relative;
+  z-index: 1;
+  overflow-x: hidden;
+  background-color: rgba(255, 255, 255, 1);
+  display: flex;
+  transition: 0.3s;
+  flex-direction: column;
+  border-radius: 10px;
+  box-shadow: 0 0 0 8px rgba(255, 255, 255, 0.2);
+  top: -550px;
+
+  //style about
+  .card-header {
+    position: relative;
+    display: flex;
+    height: 200px;
+    width: 100%;
+    background: linear-gradient(
+      to top,
+      rgba(216, 76, 21, 0) 10%,
+      rgba(14, 5, 137, 0.2) 44%,
+      rgba(83, 4, 118, 0.4) 100%
+    );
+    .avatar {
+      flex-shrink: 0;
+      width: 100px;
+      transition: 0.3s;
+      border-radius: 50px;
+      height: 100px;
+      margin: 40px auto;
+      justify-content: center;
+      text-align: center;
+    }
+    .card-fullname {
+      position: absolute;
+      bottom: 0;
+      font-size: 22px;
+      font-weight: 700;
+      text-align: center;
+      white-space: nowrap;
+      transform: translateY(-10px) translateX(-50%);
+      left: 50%;
+    }
+
+    .card-jobtitle {
+      position: absolute;
+      bottom: 0;
+      font-size: 11px;
+      white-space: nowrap;
+      font-weight: 500;
+      opacity: 0.7;
+      text-transform: uppercase;
+      letter-spacing: 1.5px;
+      margin: 0;
+      left: 50%;
+      transform: translateX(-50%) translateY(-7px);
+    }
+  }
+
+  .card-main {
+    position: relative;
+    flex: 1;
+    display: flex;
+    padding-top: 10px;
+    flex-direction: column;
+
+    .card-content {
+      padding: 20px;
+      .card-subtitle {
+        font-weight: 700;
+        font-size: 13px;
+        margin-bottom: 8px;
+        .card-desc {
+          line-height: 1.6;
+          color: #636b6f;
+          font-size: 14px;
+          margin: 0;
+          font-weight: 400;
+          font-family: 'DM Sans', sans-serif;
+        }
+      }
+    }
+  }
+}
+.card-main {
+  position: relative;
+  flex: 1;
+  display: flex;
+  padding-top: 10px;
+  flex-direction: column;
+
+  .card-content {
+    padding: 20px;
+    .card-subtitle {
+      font-weight: 700;
+      font-size: 13px;
+      margin-bottom: 8px;
+      .card-desc {
+        line-height: 1.6;
+        color: #636b6f;
+        font-size: 14px;
+        margin: 0;
+        font-weight: 400;
+        font-family: 'DM Sans', sans-serif;
+      }
+    }
+  }
+}
+// style button
+
+//skill
+
+.card-section {
+  width: 340px;
+  margin: auto;
+  overflow-y: auto;
+  position: relative;
+  z-index: 1;
+  overflow-x: hidden;
+  background-color: rgba(255, 255, 255, 1);
+  display: flex;
+  transition: 0.3s;
+  flex-direction: column;
+  border-radius: 10px;
+  box-shadow: 0 0 0 8px rgba(255, 255, 255, 0.2);
+  top: -550px;
+
+  &.is-active {
+    animation: fadeIn 0.6s both;
+  }
+
+  .card-timeline {
+    margin-top: 30px;
+    position: relative;
+    &:after {
+      background: linear-gradient(to top, rgba(134, 214, 243, 0) 0%, rgba(81, 106, 204, 1) 100%);
+      content: '';
+      left: 62px;
+      width: 2px;
+      top: 0;
+      height: 100%;
+      position: absolute;
+      content: '';
+    }
+  }
+  .avatar {
+    flex-shrink: 0;
+    width: 60px;
+    transition: 0.3s;
+    border-radius: 50px;
+    margin-bottom: 50px;
+    height: 60px;
+  }
+  .card-content {
+    padding: 20px;
+    height: 360px;
+    background: linear-gradient(to top, rgba(134, 214, 243, 0) 80%, rgb(132, 149, 218) 100%);
+    .card-fullname {
+      position: absolute;
+      font-size: 22px;
+      font-weight: 700;
+      text-align: center;
+      transform: translateY(-10px) translateX(-50%);
+      left: 50%;
+      top: 20px;
+      margin-left: 20px;
+    }
+
+    .card-jobtitle {
+      position: absolute;
+      font-size: 11px;
+      white-space: nowrap;
+      font-weight: 500;
+      opacity: 0.7;
+      text-transform: uppercase;
+      transform: translateX(-50%) translateY(-7px);
+      top: 55px;
+      margin-left: 140px;
+    }
+    .card-subtitle {
+      font-weight: 700;
+      font-size: 13px;
+      margin-bottom: 8px;
+      .card-desc {
+        line-height: 1.6;
+        color: #636b6f;
+        font-size: 14px;
+        margin: 0;
+        font-weight: 400;
+        font-family: 'DM Sans', sans-serif;
+      }
+    }
+    .card-contact {
+      display: flex;
+      align-items: center;
+      font-size: 13px;
+      color: #6f6f7b;
+      font-family: 'DM Sans', sans-serif;
+      line-height: 1.6;
+      cursor: pointer;
+      margin-bottom: 20px;
+      .fa-solid {
+        margin-right: 30px;
+      }
+    }
+    .contact-me {
+      border: 0;
+      outline: none;
+      background: linear-gradient(to right, rgba(83, 200, 239, 0.8) 0%, rgba(81, 106, 204, 0.8) 96%);
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.15);
+      color: #fff;
+      padding: 12px 16px;
+      width: 100%;
+      border-radius: 5px;
+      margin-top: 25px;
+      cursor: pointer;
+      font-size: 14px;
+      font-weight: 500;
+      font-family: 'Jost', sans-serif;
+      transition: 0.3s;
+    }
+  }
+  .card-item {
+    position: relative;
+    padding-left: 60px;
+    padding-right: 20px;
+    padding-bottom: 30px;
+    margin-top: 20px;
+    z-index: 1;
+    &:last-child {
+      padding-bottom: 5px;
+    }
+
+    &:after {
+      content: attr(data-skill);
+      width: 20px;
+      position: absolute;
+      top: 0;
+      left: 57px;
+      width: 8px;
+      height: 8px;
+      line-height: 0.6;
+      border: 2px solid #fff;
+      font-size: 11px;
+      text-indent: -35px;
+      border-radius: 50%;
+      color: rgba(#868686, 0.7);
+      background: linear-gradient(to bottom, lighten(#516acc, 20%) 0%, #516acc 100%);
+    }
+  }
+
+  .card-item-title {
+    font-weight: 500;
+    font-size: 14px;
+    margin-bottom: 5px;
+    margin-left: 20px;
+  }
+
+  .card-item-desc {
+    font-size: 13px;
+    color: #6f6f7b;
+    line-height: 1.5;
+    font-family: 'DM Sans', sans-serif;
+  }
+}
