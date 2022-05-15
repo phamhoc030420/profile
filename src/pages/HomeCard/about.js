@@ -5,7 +5,7 @@ function About() {
     <>
       <div className="card">
         <div className="card-header">
-          <img className="avatar" src={avatar} />
+          <img alt="avatar" className="avatar" src={avatar} />
           <h1 className="card-fullname">Pham Viet Hoc</h1>
           <h2 className="card-jobtitle">Web Developer</h2>
         </div>
@@ -15,8 +15,8 @@ function About() {
             <div className="card-content">
               <div className="card-subtitle">ABOUT</div>
               <p className="card-desc">
-                Whatever tattooed stumptown art party sriracha gentrify hashtag intelligentsia readymade schlitz
-                brooklyn disrupt.
+                Your success and happiness lies in you. Resolve to keep happy, and your joy and you shall form an
+                invincible host against difficulties.
               </p>
             </div>
           </div>
