@@ -7,6 +7,9 @@
   justify-content: center;
   box-sizing: border-box;
   flex-wrap: wrap;
+  .centerTilt {
+    margin: 0 160px;
+  }
   .about {
     display: inline-block;
     text-align: left;
@@ -16,8 +19,8 @@
     font-family: 'Poppins', sans-serif;
     background-color: rgb(113, 41, 237);
     color: #fff;
-    width: 480px;
-    height: 400px;
+    width: 350px;
+    height: 420px;
     border-radius: 20px;
     border: 5px solid rgb(113, 41, 237);
     padding: 20px;
@@ -30,12 +33,10 @@
         width: 30px;
         height: 30px;
         margin-top: 10px;
-        // margin-right: 40px;
       }
       span {
         padding-top: 0px;
         margin-left: 10px;
-        // margin-right: 40px;
       }
     }
     p {
@@ -79,8 +80,8 @@
     font-family: 'Poppins', sans-serif;
     background-color: rgb(113, 41, 237);
     color: #000;
-    width: 480px;
-    height: 400px;
+    width: 350px;
+    height: 420px;
     border-radius: 20px;
     border: 5px solid rgb(113, 41, 237);
     padding: 20px;

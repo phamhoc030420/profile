@@ -55,7 +55,6 @@ function Footer(props) {
                 <li>230 Man Thien Street, Thu Duc </li>
               </ul>
             </div>
-
             <div className="content-footer">
               <h4>Information</h4>
               <ul className="list">

@@ -2,6 +2,7 @@ import { useState, useEffect } from 'react';
 import { FcHome } from 'react-icons/fc';
 import { AiOutlineProfile, AiOutlineContacts, AiOutlineInfoCircle, AiOutlineProject } from 'react-icons/ai';
 import './navigation.scss';
+import PDF from '~/assets/file/PHAM_VIET_HOC.pdf';
 function Navigation() {
   const [active, setActive] = useState('');
   useEffect(() => {
@@ -24,18 +25,21 @@ function Navigation() {
   };
   const handleAbout = () => {
     setActive('activeAbout');
-    document.body.scrollTop = 1000;
-    document.documentElement.scrollTop = 1000;
+    document.body.scrollTop = 900;
+    document.documentElement.scrollTop = 900;
   };
   const handleProject = () => {
     setActive('activeProject');
-    document.body.scrollTop = 1750;
-    document.documentElement.scrollTop = 1750;
+    document.body.scrollTop = 1450;
+    document.documentElement.scrollTop = 1450;
   };
   const handleContact = () => {
     setActive('activeContact');
-    document.body.scrollTop = 2600;
-    document.documentElement.scrollTop = 2600;
+    document.body.scrollTop = 2200;
+    document.documentElement.scrollTop = 2200;
+  };
+  const handleCV = () => {
+    setActive('activeCV');
   };
   return (
     <>
@@ -67,10 +71,12 @@ function Navigation() {
             </button>
           </li>
           <li>
-            <button className={active === 'activeCV' ? 'nav-item-active' : ''} onClick={() => setActive('activeCV')}>
-              <AiOutlineProfile />
-              <span className="title">My CV</span>
-            </button>
+            <a href={PDF} target="_blank">
+              <button className={active === 'activeCV' ? 'nav-item-active' : ''} onClick={handleCV}>
+                <AiOutlineProfile />
+                <span className="title">My CV</span>
+              </button>
+            </a>
           </li>
         </ul>
         <svg version="1.1" id="filter-svg" xmlns="http://www.w3.org/2000/svg">

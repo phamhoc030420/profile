@@ -14,6 +14,7 @@ import ParticleBackground from '~/ParticleBackground';
 import Project from '../Project';
 import Navigation from '~/pages/Navigation';
 import Footer from '~/pages/Footer';
+import MyCV from '~/pages/MyCV';
 function Home() {
   SwiperCore.use([Autoplay]);
   const [anh, setAnh] = useState([logo, logo1, logo2]);
@@ -70,6 +71,9 @@ function Home() {
             <input type="checkbox" id="switcher" onClick={handleDarkMode} />
             <label htmlFor="switcher"></label>
           </span>
+        </div>
+        <div className="cv">
+          <MyCV />
         </div>
         <Introduce dark={dark} />
       </div>

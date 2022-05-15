@@ -18,8 +18,9 @@ function Introduce(props) {
           options={{ scale: 10, max: 50 }}
           style={{
             backgroundColor: 'transparent',
-            width: '680px',
+            width: 'auto',
             opacitt: '0.1',
+            borderRadius: '20px',
           }}
         >
           <div className={dark === '#000' ? 'about' : 'aboutLight'}>
@@ -31,12 +32,14 @@ function Introduce(props) {
             <p>In the future, have the orientation to become a Full-stack developer</p>
           </div>
         </Tilt>
+        <div className="centerTilt"></div>
         <Tilt
           options={{ scale: 10, max: 50 }}
           style={{
             backgroundColor: 'transparent',
-            width: '680px',
+            width: 'auto',
             opacitt: '0.1',
+            borderRadius: '20px',
           }}
         >
           <div className={dark === '#000' ? 'about' : 'aboutLight'}>
@@ -54,11 +57,11 @@ function Introduce(props) {
                 <img alt="anh" src={logojs} />
                 <span>JavaScript</span>
               </div>
-              <br></br>
               <div className="ho">
                 <img alt="anh" src={logobootstrap} />
                 <span>Bootstrap</span>
               </div>
+              <br></br>
               <div className="ho">
                 <img alt="anh" src={logoreact} />
                 <span>ReactJS</span>

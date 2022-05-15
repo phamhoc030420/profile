@@ -2,6 +2,7 @@
 
 .card-home {
   font-family: 'Jost', sans-serif;
+  width: 100%;
   .img {
     width: 100%;
     height: 500px;
@@ -167,11 +168,14 @@
   align-items: center;
   justify-content: center;
   flex-direction: column;
+
   .switch {
+    cursor: pointer;
     position: relative;
     width: 180px;
     height: 50px;
     border-radius: 25px;
+
     input {
       background: #ccc;
       appearance: none;
@@ -180,6 +184,7 @@
       border-radius: 25px;
       outline: none;
       transition: 0.25s;
+      cursor: pointer;
     }
     input::before,
     input::after {
@@ -239,4 +244,10 @@
       border-radius: 20px;
     }
   }
+}
+.cv {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 50px;
 }
