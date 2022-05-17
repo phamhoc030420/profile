@@ -61,7 +61,7 @@ function Introduce(props) {
                 <img alt="anh" src={logobootstrap} />
                 <span>Bootstrap</span>
               </div>
-              <br></br>
+
               <div className="ho">
                 <img alt="anh" src={logoreact} />
                 <span>ReactJS</span>

@@ -4,16 +4,18 @@ import { publicRoutes } from '~/routes';
 import React from 'react';
 function App() {
   return (
-    <Router>
-      <div className="App">
-        <Routes>
-          {publicRoutes.map((item, index) => {
-            const Page = item.component;
-            return <Route key={index} path={item.path} element={<Page />} />;
-          })}
-        </Routes>
-      </div>
-    </Router>
+    <>
+      <Router>
+        <div className="App">
+          <Routes>
+            {publicRoutes.map((item, index) => {
+              const Page = item.component;
+              return <Route key={index} path={item.path} element={<Page />} />;
+            })}
+          </Routes>
+        </div>
+      </Router>
+    </>
   );
 }
 
