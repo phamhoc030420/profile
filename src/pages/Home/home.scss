@@ -147,7 +147,7 @@
 .navigations {
   position: fixed;
 
-  bottom: -500px;
+  bottom: -540px;
   width: 100%;
   display: flex;
   justify-content: center;
@@ -250,4 +250,18 @@
   justify-content: center;
   align-items: center;
   margin-bottom: 50px;
+}
+.thank {
+  color: #fff;
+  margin-bottom: 60px;
+  text-align: center;
+  font-size: 30px;
+  font-family: 'Poppins', sans-serif;
+}
+.dark-thank {
+  color: #000;
+  margin-bottom: 60px;
+  text-align: center;
+  font-size: 30px;
+  font-family: 'Poppins', sans-serif;
 }

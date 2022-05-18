@@ -15,6 +15,7 @@ import Project from '../Project';
 import Navigation from '~/pages/Navigation';
 import Footer from '~/pages/Footer';
 import MyCV from '~/pages/MyCV';
+import SendMail from '~/pages/SendMail';
 function Home() {
   SwiperCore.use([Autoplay]);
   const [anh, setAnh] = useState([logo, logo1, logo2]);
@@ -47,7 +48,7 @@ function Home() {
         <Swiper modules={[Autoplay]} grabCursor={true} spaceBetween={0} slidesPerView={1} autoplay={{ delay: 3000 }}>
           {anh.map((item, index) => (
             <SwiperSlide key={index}>
-              <img className="img" src={item} />
+              <img alt="anh" className="img" src={item} />
             </SwiperSlide>
           ))}
         </Swiper>
@@ -89,6 +90,10 @@ function Home() {
       </div>
       <div className="navigations">
         <Navigation />
+      </div>
+      <SendMail dark={dark} />
+      <div className={dark === '#000' ? 'thank' : 'dark-thank'}>
+        <p>Thank You For Watching !!!</p>
       </div>
       <div className="footer">
         <Footer dark={dark} />

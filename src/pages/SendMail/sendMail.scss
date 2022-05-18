@@ -1,0 +1,203 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+.table-contact {
+  margin-top: 120px;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  left: 50%;
+  display: block;
+  margin-bottom: 200px;
+  .text1 {
+    font-size: 60px;
+    font-weight: 700;
+    text-align: center;
+    color: #fff;
+    letter-spacing: 8px;
+    position: relative;
+    animation: text 10s linear infinite;
+    background: black;
+  }
+  .text2 {
+    color: #fff;
+    margin: 0 auto;
+    margin-bottom: 60px;
+    font-size: 20px;
+    text-align: center;
+  }
+}
+.dark-table-contact {
+  margin-top: 120px;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  left: 50%;
+  display: block;
+  margin-bottom: 200px;
+  .text1 {
+    font-size: 60px;
+    font-weight: 700;
+    text-align: center;
+    color: #000;
+    letter-spacing: 8px;
+    position: relative;
+    animation: text 10s linear infinite;
+    background: #fff;
+  }
+  .text2 {
+    color: #000;
+    margin: 0 auto;
+    margin-bottom: 60px;
+    font-size: 20px;
+    text-align: center;
+  }
+}
+@keyframes text {
+  0% {
+    margin-bottom: -40px;
+    animation-delay: 10s;
+  }
+  30% {
+    letter-spacing: 5px;
+    margin-bottom: -40px;
+  }
+  85% {
+    letter-spacing: 10px;
+    margin-bottom: -40px;
+  }
+  100% {
+    animation-delay: 10s;
+  }
+}
+.formMail {
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+  text-align: center;
+  margin-bottom: 200px;
+  // padding: 50px;
+  margin-top: 300px;
+  width: 100%;
+
+  form {
+    margin: 0 auto;
+    max-width: 700px;
+    .dark-name {
+      color: #000;
+    }
+    label {
+      margin-bottom: 10px;
+      color: #fff;
+      // float: left;
+      text-align: center;
+      // justify-content: center;
+      // align-items: center;
+      margin: 0 auto;
+    }
+    input {
+      position: relative;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+      margin-bottom: 30px;
+      width: 90%;
+      border: 1px solid red;
+      border-radius: 5px;
+      padding: 3px;
+      outline: none;
+      padding-left: 10px;
+      font-size: 16px;
+      background-color: transparent;
+      color: #fff;
+    }
+    textarea {
+      font-family: 'Poppins', sans-serif;
+      margin-bottom: 30px;
+      width: 88%;
+      border: 1px solid red;
+      border-radius: 5px;
+      padding: 3px;
+      outline: none;
+      padding-left: 10px;
+      font-size: 16px;
+      background-color: transparent;
+      color: #fff;
+      resize: none;
+    }
+    input:hover {
+      -moz-box-shadow: 0px 0px 10px 1px #ebf6ff;
+      -webkit-box-shadow: 0px 0px 10px 1px #ebf6ff;
+      box-shadow: 0px 0px 10px 1px #ebf6ff;
+      border: 1px solid #229cff;
+    }
+    input:focus {
+      -moz-box-shadow: 0px 0px 5px 1px #ebf6ff;
+      -webkit-box-shadow: 0px 0px 5px 1px #ebf6ff;
+      box-shadow: 0px 0px 5px 1px #ebf6ff;
+      border: 1px solid #229cff;
+    }
+    textarea:hover {
+      -moz-box-shadow: 0px 0px 10px 1px #ebf6ff;
+      -webkit-box-shadow: 0px 0px 10px 1px #ebf6ff;
+      box-shadow: 0px 0px 10px 1px #ebf6ff;
+      border: 1px solid #229cff;
+    }
+    textarea:focus {
+      -moz-box-shadow: 0px 0px 5px 1px #ebf6ff;
+      -webkit-box-shadow: 0px 0px 5px 1px #ebf6ff;
+      box-shadow: 0px 0px 5px 1px #ebf6ff;
+      border: 1px solid #229cff;
+    }
+    textarea::-webkit-scrollbar-track {
+      -webkit-box-shadow: inset 0 0 10px #bddae0;
+    }
+
+    textarea::-webkit-scrollbar-thumb {
+      background-color: #0b8ff9;
+    }
+
+    button {
+      width: 100px;
+      height: 40px;
+      border-radius: 5px;
+      background-color: transparent;
+      color: #fff;
+    }
+    .send {
+      border: 1px solid rgb(39, 7, 243);
+    }
+    .clear {
+      border: 1px solid red;
+    }
+    .send:hover {
+      cursor: pointer;
+      background-color: rgb(39, 7, 243);
+    }
+    .clear:hover {
+      cursor: pointer;
+      background-color: red;
+    }
+    .dark-send {
+      color: #000;
+      border: 1px solid rgb(39, 7, 243);
+    }
+    .dark-clear {
+      color: #000;
+      border: 1px solid red;
+    }
+    .dark-send:hover {
+      color: #000;
+      cursor: pointer;
+      background-color: rgb(39, 7, 243);
+    }
+    .dark-clear:hover {
+      color: #000;
+      cursor: pointer;
+      background-color: red;
+    }
+    .distance {
+      margin: 0 60px;
+    }
+  }
+}

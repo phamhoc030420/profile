@@ -30,13 +30,13 @@ function Navigation() {
   };
   const handleProject = () => {
     setActive('activeProject');
-    document.body.scrollTop = 1450;
-    document.documentElement.scrollTop = 1450;
+    document.body.scrollTop = 1700;
+    document.documentElement.scrollTop = 1700;
   };
   const handleContact = () => {
     setActive('activeContact');
-    document.body.scrollTop = 2200;
-    document.documentElement.scrollTop = 2200;
+    document.body.scrollTop = 2700;
+    document.documentElement.scrollTop = 2700;
   };
   const handleCV = () => {
     setActive('activeCV');
@@ -71,7 +71,7 @@ function Navigation() {
             </button>
           </li>
           <li>
-            <a href={PDF} target="_blank">
+            <a href={PDF} target="_blank" className="chan" rel="noreferrer">
               <button className={active === 'activeCV' ? 'nav-item-active' : ''} onClick={handleCV}>
                 <AiOutlineProfile />
                 <span className="title">My CV</span>

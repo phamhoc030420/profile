@@ -1,13 +1,13 @@
 import Home from '~/pages/Home';
-import Footer from '~/pages/Footer';
+import SendMail from '~/pages/SendMail';
 export const publicRoutes = [
   {
     path: '/',
     component: Home,
   },
   {
-    path: '/foo',
-    component: Footer,
+    path: '/mail',
+    component: SendMail,
   },
 ];
 export const privateRoutes = [];
